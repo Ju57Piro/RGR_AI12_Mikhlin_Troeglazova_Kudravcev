@@ -9,7 +9,7 @@ int main() {
         if (!file.is_open()) // если файл не открыт
             std::cout << "Файл не может быть открыт!\n"; 
         else { //если открыт
-            std::getline(file, text, '\0'); //считать до конца
+            std::getline(file, text, EOF); //считать до конца
                 
         }
         
