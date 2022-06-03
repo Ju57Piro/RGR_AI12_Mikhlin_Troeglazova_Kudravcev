@@ -66,7 +66,6 @@ std::vector<std::string> matrix(std::string* text, int size)
 			}
 		}
 	}
-	std::cout << matrix[1][0] << matrix[3][3];
 	return matrix;
 }
 
@@ -80,38 +79,6 @@ int size_of_matrix(std::string text)
 	return sqrt(text.length());
 }
 
-std::string write_segment(std::vector<std::string> matrix,  int dir, int step, int &i, int &j)
-{
-	std::string res;
-	switch (dir)
-	{
-	case 0: //вверх
-		for (int k = 0; k < step; k++) {
-			res.push_back(matrix[i][j]);
-			i--;
-		}
-		break;
-	case 1: //влево
-		for (int k = 0; k < step; k++) {
-			res.push_back(matrix[i][j]);
-			j--;
-		}
-		break;
-	case 2: //вниз
-		for (int k = 0; k < step; k++) {
-			res.push_back(matrix[i][j]);
-			i++;
-		}
-		break;
-	case 3: //вправо
-		for (int k = 0; k < step; k++) {
-			res.push_back(matrix[i][j]);
-			j++;;
-		}
-		break;
-	}
-	return res;
-}
 
 std::string matrix_to_string(std::vector<std::string> matrix, int size)
 {
