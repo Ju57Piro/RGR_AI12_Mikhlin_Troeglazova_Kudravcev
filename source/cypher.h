@@ -1,7 +1,3 @@
 #pragma once
-#include <cstdlib>
-#include <cmath>
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <vector>
+#include "matrix.h"
+#include "decrypt_matrix.h"
