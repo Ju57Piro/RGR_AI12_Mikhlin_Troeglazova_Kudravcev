@@ -70,14 +70,6 @@ std::vector<std::string> matrix(std::string* text, int size)
 }
 
 
-int size_of_matrix(std::string text)
-{
-	if (ceil(sqrt(text.length())) > sqrt(text.length()))
-	{
-		return sqrt(text.length()) + 1;;
-	}
-	return sqrt(text.length());
-}
 
 
 std::string matrix_to_string(std::vector<std::string> matrix, int size)
@@ -89,14 +81,14 @@ std::string matrix_to_string(std::vector<std::string> matrix, int size)
 	std::string tem_str;
 	std::string res_string;
 	if (size % 2 == 0) { // четная матрица
-		while (k < size) {
+		while (true) {
 			tem_str += write_segment(matrix, 0, step, i, j);
 			tem_str += write_segment(matrix, 1, step, i, j);
 			tem_str += write_segment(matrix, 2, step+1, i, j);
 			tem_str += write_segment(matrix, 3, step+1, i, j);
 			step += 2;
 			if (step >= size - 1) {
-				tem_str += write_segment(matrix, 0, size - 1, i, j);
+				tem_str += write_segment(matrix, 0, step, i, j);
 				tem_str += write_segment(matrix, 1, step, i, j);
 				tem_str += write_segment(matrix, 2, step+1, i, j);
 				break;
@@ -104,7 +96,7 @@ std::string matrix_to_string(std::vector<std::string> matrix, int size)
 		}
 	}
 	else { //нечетная матрица
-		while (k < size) {
+		while (true) {
 			tem_str += write_segment(matrix, 3, step, i, j);
 			tem_str += write_segment(matrix, 0, step, i, j);
 			tem_str += write_segment(matrix, 1, step + 1, i, j);
