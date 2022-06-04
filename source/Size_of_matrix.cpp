@@ -2,9 +2,9 @@
 
 int size_of_matrix(std::string text)
 {
-	if (ceil(sqrt(text.length())) > sqrt(text.length()))
+	if (ceil(sqrt(text.length() - 1)) > sqrt(text.length() - 1))
 	{
-		return sqrt(text.length()) + 1;;
+		return sqrt(text.length() - 1) + 1;
 	}
-	return sqrt(text.length());
+return sqrt(text.length() - 1);
 }

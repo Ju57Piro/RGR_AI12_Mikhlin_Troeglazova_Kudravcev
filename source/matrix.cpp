@@ -1,15 +1,15 @@
 #include "matrix.h"
 
-std::vector<std::string> matrix(std::string* text, int size)
+std::vector<std::string> matrix(std::string* text)
 {
-
+	int size = size_of_matrix(*text);
 	std::string text_cont = *text;
 	std::string temp_str;
 	std::vector<std::string> matrix;
 	int i, len, j, k;
 	j = k = 0;
 	len = text->length();
-	if (ceil(sqrt(text_cont.length())) == sqrt(text_cont.length()))
+	if (ceil(sqrt(text_cont.length() - 1)) == sqrt(text_cont.length() - 1))
 	{
 		for (i = 0; i <= len; i += size) {
 			k = 0;
@@ -68,9 +68,6 @@ std::vector<std::string> matrix(std::string* text, int size)
 	}
 	return matrix;
 }
-
-
-
 
 std::string matrix_to_string(std::vector<std::string> matrix, int size)
 {
