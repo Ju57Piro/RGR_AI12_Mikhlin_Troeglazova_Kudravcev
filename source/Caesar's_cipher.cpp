@@ -8,7 +8,7 @@ std::string Encryption(std::string text, int n)
 	char d2[33] = { (char)160,(char)161,(char)162,(char)163,(char)164,(char)165,(char)241,(char)166,(char)167,(char)168,(char)169,(char)170,(char)171,(char)172,(char)173,(char)174,(char)175,(char)224,(char)225,(char)226,(char)227,(char)228,(char)229,(char)230,(char)231,(char)232,(char)233,(char)234,(char)235,(char)236,(char)237,(char)238,(char)239 };
 	size_t length = text.length();
 
-	char d4[length];
+	char *d4 = new char[length];
 	int p = length - 1;
 	int k = -1;
 	int u;
@@ -55,7 +55,7 @@ std::string Decryption(std::string text, int n) {
 	char d2[33] = { (char)160,(char)161,(char)162,(char)163,(char)164,(char)165,(char)241,(char)166,(char)167,(char)168,(char)169,(char)170,(char)171,(char)172,(char)173,(char)174,(char)175,(char)224,(char)225,(char)226,(char)227,(char)228,(char)229,(char)230,(char)231,(char)232,(char)233,(char)234,(char)235,(char)236,(char)237,(char)238,(char)239 };
 	size_t length = text.length();
 
-	char d4[length];
+	char* d4 = new char[length];
 	int p = length - 1;
 	int k = -1;
 	int u;
