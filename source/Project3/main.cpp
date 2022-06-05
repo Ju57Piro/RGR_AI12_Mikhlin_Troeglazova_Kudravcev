@@ -71,7 +71,7 @@ int main()
                 {
                 case 1:
                     do {
-                        std::cout << "גגוהטעו סהגטד הכÿ רטפנא צוחאנÿ במכüרו 0";
+                        std::cout << "גגוהטעו סהגטד הכÿ רטפנא צוחאנÿ במכüרו 0" << std::endl;;
                         std::cin >> n;
                         if (n >= 0) {
                             check2 = true;
