@@ -4,7 +4,7 @@
 
 int main()
 {
-    setlocale(LC_ALL, "ru");
+    setlocale(LC_ALL, "Russian");
     bool check = false;
     while (check == false) {
         std::cout << "введите пароль для доступа к программе" << std::endl;
