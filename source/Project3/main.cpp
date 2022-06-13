@@ -72,7 +72,7 @@ int main()
                 {
                 case 1:
                     do {
-                        std::cout << "גגוהטעו סהגטד הכÿ רטפנא צוחאנÿ במכüרו 0:";
+                        std::cout << "גגוהטעו סהגטד הכÿ רטפנא צוחאנÿ במכüרו 0: ";
                         std::cin >> n;
                         std::cout << std::endl;
                         if (n >= 0) {
@@ -110,8 +110,9 @@ int main()
                 switch (user_input) {
                 case 1:
                     do {
-                        std::cout << "גגוהטעו סהגטד הכÿ רטפנא צוחאנÿ במכüרו 0" << std::endl;
+                        std::cout << "גגוהטעו סהגטד הכÿ רטפנא צוחאנÿ במכüרו 0: ";
                         std::cin >> n;
+                        std::cout << std::endl;
                         if (n >= 0) {
                             check2 = true;
                         }
