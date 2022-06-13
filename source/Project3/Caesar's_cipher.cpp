@@ -33,6 +33,10 @@ std::string Encryption(std::string text, int n)
 				result.push_back(d2[u]);
 				break;
 			}
+			if ((sym != d1[s] || sym != d2[s]) && s == 32) {
+				result.push_back(sym);
+				break;
+			}
 		}
 
 	}
@@ -66,6 +70,11 @@ std::string Decryption(std::string text, int n) {
 
 			if (sym == d2[s]) {
 				result.push_back(d2[u]);
+				break;
+			}
+
+			if ((sym != d1[s] || sym != d2[s]) && s == 32) {
+				result.push_back(sym);
 				break;
 			}
 		}
