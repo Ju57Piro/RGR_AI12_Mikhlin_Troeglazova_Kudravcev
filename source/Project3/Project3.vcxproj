@@ -148,6 +148,7 @@
     <ClCompile Include="decrypt_matrix.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="matrix.cpp" />
+    <ClCompile Include="Simple_Table_rewrite.cpp" />
     <ClCompile Include="Size_of_matrix.cpp" />
     <ClCompile Include="TablShifr.cpp" />
     <ClCompile Include="write_segment.cpp" />
@@ -156,6 +157,7 @@
     <ClInclude Include="Caesar%27s_cipher.h" />
     <ClInclude Include="cypher.h" />
     <ClInclude Include="decrypt_matrix.h" />
+    <ClInclude Include="Simple_Table_rewrite.h" />
     <ClInclude Include="Size_of_matrix.h" />
     <ClInclude Include="matrix.h" />
     <ClInclude Include="TablShifr.h" />
