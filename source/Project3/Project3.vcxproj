@@ -145,6 +145,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Caesar%27s_cipher.cpp" />
+    <ClCompile Include="cypher.cpp" />
     <ClCompile Include="decrypt_matrix.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="matrix.cpp" />

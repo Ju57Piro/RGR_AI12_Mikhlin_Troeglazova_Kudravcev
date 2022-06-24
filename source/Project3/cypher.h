@@ -5,3 +5,10 @@
 #include "TablShifr.h"
 #include <fstream>
 
+bool pas();
+std::ifstream readfile();
+std::ofstream printfile(std::string& file_name2);
+
+int type_selection();
+void encr(std::ofstream& out, bool check2, std::string result, std::string text, int user_input, std::string file_name2);
+void decr(std::ofstream& out, bool check2, std::string result, std::string text, int user_input, std::string file_name2);
