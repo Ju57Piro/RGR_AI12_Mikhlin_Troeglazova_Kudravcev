@@ -6,6 +6,9 @@
 #include "Simple_Table_rewrite.h"
 #include "code_word_encr.h"
 #include "Gronsfeld_cipher.h"
+#include "TarabFunc.h"
+#include "FuncAtbash.h"
+
 #include <fstream>
 
 bool pas();

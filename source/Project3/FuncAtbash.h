@@ -4,7 +4,7 @@
 #include <algorithm>
 #include <math.h>
 #include <iterator>
+#include "find_in_vector.h"
 
-std::pair<bool, int > findInVector(const std::vector<char>& Case, const char& element);
-std::string DecShif(std::string S3);
-std::string Tabl(std::string S1);
+std::string atbash_decr(std::string S3);
+std::string atbash_encr(std::string S1);

@@ -5,26 +5,7 @@
 #include <math.h>
 #include <iterator>
 
-std::pair<bool, int> findInVector(const std::vector<char>& Case, const char& element)
-{
-    setlocale(LC_ALL, "Russian");
-    std::pair<bool, int > result;
-    // Find given element in vector
-    auto it = std::find(Case.begin(), Case.end(), element);
-    if (it != Case.end())
-    {
-        result.second = distance(Case.begin(), it);
-        result.first = true;
-    }
-    else
-    {
-        result.first = false;
-        result.second = -1;
-    }
-    return result;
-}
-
-std::string DecShif(std::string S3)
+std::string atbash_decr(std::string S3)
 {
     setlocale(LC_ALL, "Russian");
     std::vector<char>Case = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
@@ -45,7 +26,7 @@ std::string DecShif(std::string S3)
 
 }
 
-std::string Tabl(std::string S1)
+std::string atbash_encr(std::string S1)
 {
     setlocale(LC_ALL, "Russian");
     std::vector<char>Case = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };

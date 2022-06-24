@@ -106,8 +106,14 @@ void encr(std::ofstream& out, bool check2, std::string result, std::string text,
         std::cout << "шифрование успешно результат в: " << file_name2 << "\n \n";
         break;
     case 6:
+        result = atbash_encr(text);
+        out << result;
+        std::cout << "шифрование успешно результат в: " << file_name2 << "\n \n";
         break;
     case 7:
+        result = tarabar_encr(text);
+        out << result;
+        std::cout << "шифрование успешно результат в: " << file_name2 << "\n \n";
         break;
     case 8:
         break;
@@ -167,8 +173,14 @@ void decr(std::ofstream& out, bool check2, std::string result, std::string text,
         std::cout << "дешифрование успешно результат в: " << file_name2 << "\n \n";
         break;
     case 6:
+        result = atbash_decr(text);
+        out << result;
+        std::cout << "дешифрование успешно результат в: " << file_name2 << "\n \n";
         break;
     case 7:
+        result = tarabar_decr(text);
+        out << result;
+        std::cout << "дешифрование успешно результат в: " << file_name2 << "\n \n";
         break;
     case 8:
         break;
