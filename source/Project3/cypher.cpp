@@ -51,7 +51,13 @@ int type_selection()
     std::cout << "выберите тип шифрования: \n";
     std::cout << "1.шифрование методом цезаря \n";
     std::cout << "2.шифрование табличным методом \n";
-    std::cout << "3.шифрование матричным методом" << std::endl;
+    std::cout << "3.шифрование матричным методом \n";
+    std::cout << "4.шифрование с использованием кодового слова\n";
+    std::cout << "5.шифрование простой табличной перестановкой \n";
+    std::cout << "6.шифрование методом Атбаш\n";
+    std::cout << "7.шифрование методом <тарабарская грамота>\n";
+    std::cout << "8.шифрование с помощью квадрата Полибия \n";
+    std::cout << "9.шифрование методом Гронсфельда\n";
     std::cout << "Ввод: ";
     std::cin >> user_input;
     std::cout << std::endl;
@@ -89,6 +95,24 @@ void encr(std::ofstream& out, bool check2, std::string result, std::string text,
         out << result;
         std::cout << "шифрование успешно результат в: " << file_name2 << "\n \n";
         break;
+    case 4:
+        result = code_word_encr(text);
+        out << result;
+        std::cout << "шифрование успешно результат в: " << file_name2 << "\n \n";
+        break;
+    case 5:
+        result = simple_table_rewrite_enc(text);
+        out << result;
+        std::cout << "шифрование успешно результат в: " << file_name2 << "\n \n";
+        break;
+    case 6:
+        break;
+    case 7:
+        break;
+    case 8:
+        break;
+    case 9:
+        break;
     default:
         std::cout << "некорректные данные" << std::endl;
     }
@@ -120,6 +144,24 @@ void decr(std::ofstream& out, bool check2, std::string result, std::string text,
         result = decrypt_matrix(text);
         out << result;
         std::cout << "дешифрование успешно результат в: " << file_name2 << "\n \n";
+        break;
+    case 4:
+        result = code_word_decr(text);
+        out << result;
+        std::cout << "шифрование успешно результат в: " << file_name2 << "\n \n";
+        break;
+    case 5:
+        result = simple_table_rewrite_dec(text);
+        out << result;
+        std::cout << "шифрование успешно результат в: " << file_name2 << "\n \n";
+        break;
+    case 6:
+        break;
+    case 7:
+        break;
+    case 8:
+        break;
+    case 9:
         break;
     default:
         std::cout << "некорректные данные" << std::endl;
