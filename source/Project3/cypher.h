@@ -5,6 +5,7 @@
 #include "TablShifr.h"
 #include "Simple_Table_rewrite.h"
 #include "code_word_encr.h"
+#include "Gronsfeld_cipher.h"
 #include <fstream>
 
 bool pas();

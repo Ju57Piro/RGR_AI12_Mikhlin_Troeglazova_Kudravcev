@@ -148,6 +148,7 @@
     <ClCompile Include="code_word_encr.cpp" />
     <ClCompile Include="cypher.cpp" />
     <ClCompile Include="decrypt_matrix.cpp" />
+    <ClCompile Include="Gronsfeld_cipher.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="matrix.cpp" />
     <ClCompile Include="Simple_Table_rewrite.cpp" />
@@ -160,6 +161,7 @@
     <ClInclude Include="code_word_encr.h" />
     <ClInclude Include="cypher.h" />
     <ClInclude Include="decrypt_matrix.h" />
+    <ClInclude Include="Gronsfeld_cipher.h" />
     <ClInclude Include="Simple_Table_rewrite.h" />
     <ClInclude Include="Size_of_matrix.h" />
     <ClInclude Include="matrix.h" />

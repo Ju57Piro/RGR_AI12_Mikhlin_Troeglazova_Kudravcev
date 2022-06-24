@@ -112,6 +112,17 @@ void encr(std::ofstream& out, bool check2, std::string result, std::string text,
     case 8:
         break;
     case 9:
+        do {
+            std::cout << "введите сдвиг для шифра Гронсфельда больше 0: ";
+            std::cin >> n;
+            std::cout << std::endl;
+            if (n >= 0) {
+                check2 = true;
+            }
+        } while (check2 == false);
+        result = gronsfeld_encr(text, n);
+        out << result;
+        std::cout << "шифрование успешно результат в: " << file_name2 << "\n \n";
         break;
     default:
         std::cout << "некорректные данные" << std::endl;
@@ -148,12 +159,12 @@ void decr(std::ofstream& out, bool check2, std::string result, std::string text,
     case 4:
         result = code_word_decr(text);
         out << result;
-        std::cout << "шифрование успешно результат в: " << file_name2 << "\n \n";
+        std::cout << "дешифрование успешно результат в: " << file_name2 << "\n \n";
         break;
     case 5:
         result = simple_table_rewrite_dec(text);
         out << result;
-        std::cout << "шифрование успешно результат в: " << file_name2 << "\n \n";
+        std::cout << "дешифрование успешно результат в: " << file_name2 << "\n \n";
         break;
     case 6:
         break;
@@ -162,6 +173,17 @@ void decr(std::ofstream& out, bool check2, std::string result, std::string text,
     case 8:
         break;
     case 9:
+        do {
+            std::cout << "введите сдвиг для шифра Гронсфельда больше 0: ";
+            std::cin >> n;
+            std::cout << std::endl;
+            if (n >= 0) {
+                check2 = true;
+            }
+        } while (check2 == false);
+        result = gronsfeld_decr(text, n);
+        out << result;
+        std::cout << "дешифрование успешно результат в: " << file_name2 << "\n \n";
         break;
     default:
         std::cout << "некорректные данные" << std::endl;

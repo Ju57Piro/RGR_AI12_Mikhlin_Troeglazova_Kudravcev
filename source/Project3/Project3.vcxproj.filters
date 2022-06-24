@@ -45,6 +45,9 @@
     <ClCompile Include="cypher.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Gronsfeld_cipher.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cypher.h">
@@ -72,6 +75,9 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="code_word_encr.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Gronsfeld_cipher.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
