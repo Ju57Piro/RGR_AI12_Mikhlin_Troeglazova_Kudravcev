@@ -8,6 +8,7 @@
 #include "Gronsfeld_cipher.h"
 #include "TarabFunc.h"
 #include "FuncAtbash.h"
+#include "Polybius_square.h"
 
 #include <fstream>
 

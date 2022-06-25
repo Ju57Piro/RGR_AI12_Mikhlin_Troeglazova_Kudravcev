@@ -153,6 +153,7 @@
     <ClCompile Include="Gronsfeld_cipher.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="matrix.cpp" />
+    <ClCompile Include="Polybius_square.cpp" />
     <ClCompile Include="Simple_Table_rewrite.cpp" />
     <ClCompile Include="Size_of_matrix.cpp" />
     <ClCompile Include="TablShifr.cpp" />
@@ -168,6 +169,7 @@
     <ClInclude Include="Gronsfeld_cipher.h" />
     <ClInclude Include="find_in_vector.h" />
     <ClInclude Include="HedAtbash.h" />
+    <ClInclude Include="Polybius_square.h" />
     <ClInclude Include="Simple_Table_rewrite.h" />
     <ClInclude Include="Size_of_matrix.h" />
     <ClInclude Include="matrix.h" />

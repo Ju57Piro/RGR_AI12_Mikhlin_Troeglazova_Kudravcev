@@ -116,6 +116,9 @@ void encr(std::ofstream& out, bool check2, std::string result, std::string text,
         std::cout << "шифрование успешно результат в: " << file_name2 << "\n \n";
         break;
     case 8:
+        result = Polybius_encr(text);
+        out << result;
+        std::cout << "шифрование успешно результат в: " << file_name2 << "\n \n";
         break;
     case 9:
         do {
@@ -183,6 +186,10 @@ void decr(std::ofstream& out, bool check2, std::string result, std::string text,
         std::cout << "дешифрование успешно результат в: " << file_name2 << "\n \n";
         break;
     case 8:
+        result = Polybius_decr(text);
+        out << result;
+        std::cout << "дешифрование успешно результат в: " << file_name2 << "\n \n";
+        break;
         break;
     case 9:
         do {

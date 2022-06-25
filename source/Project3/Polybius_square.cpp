@@ -2,7 +2,7 @@
 
 std::string Polybius_encr(std::string text) {
 	size_t length = text.length();
-
+	std::string result;
 	std::vector<std::string> v(text.length());
 	for (int idx = 0; idx < length; idx++) {
 		v[idx] = text[idx];
@@ -14,15 +14,15 @@ std::string Polybius_encr(std::string text) {
 	for (int k = 0; k < length; k++) {
 		for (int i = 0; i < 25; i++) {
 			if (text[k] == 'J') {
-				result.push_back("24");
+				result += "24";
 				break;
 			}
 			if (v.at(k) == d1.at(i)) {
-				result.push_back(d2.at(i));
+				result += d2.at(i);
 				break;
 			}
 			if (v.at(k) != d1.at(i) && i == 24) {
-				result.push_back(v.at(k));
+				result += v.at(k);
 				break;
 			}
 		}
@@ -34,7 +34,7 @@ std::string Polybius_encr(std::string text) {
 
 std::string Polybius_decr(std::string text) {
 	size_t length = text.length();
-
+	std::string result;
 	std::vector<std::string> v(text.length());
 	for (int idx = 0; idx < length; idx++) {
 		v[idx] = text[idx];
@@ -48,7 +48,7 @@ std::string Polybius_decr(std::string text) {
 		for (int i = 0; i < 5; i++) {
 
 			if (k + 1 >= length) {
-				result.push_back(v.at(k));
+				result += v.at(k);
 				break;
 			}
 
@@ -59,13 +59,13 @@ std::string Polybius_decr(std::string text) {
 
 					if (v.at(k) == num.at(j)) {
 						int c = i * 5 + j;
-						result.push_back(d1.at(c));
+						result += d1.at(c);
 						break;
 					}
 
 					if (v.at(k) != num.at(j) && j == 4) {
-						result.push_back(v.at(k - 1));
-						result.push_back(v.at(k));
+						result += v.at(k - 1);
+						result += v.at(k);
 						break;
 					}
 
@@ -74,7 +74,7 @@ std::string Polybius_decr(std::string text) {
 			}
 
 			if (v.at(k) != num.at(i) && i == 4) {
-				result.push_back(v.at(k));
+				result += v.at(k);
 				break;
 			}
 
