@@ -6,6 +6,5 @@
 #include <iterator>
 #include "find_in_vector.h"
 
-std::string DecShif(std::string S3);
-std::string Tabl(std::string S1);
-
+std::string atbash_decr(std::string S3);
+std::string atbash_encr(std::string S1);

@@ -1,6 +1,6 @@
 #include "matrix.h"
 
-std::vector<std::string> matrix(std::string* text)
+std::vector<std::string> matrix(std::string* text) //функция записи строки в матрицу
 {
 	int size = size_of_matrix(*text);
 	std::string text_cont = *text;
@@ -69,7 +69,7 @@ std::vector<std::string> matrix(std::string* text)
 	return matrix;
 }
 
-std::string matrix_to_string(std::vector<std::string> matrix, int size)
+std::string matrix_to_string(std::vector<std::string> matrix, int size)//функция записи матрицы в строку из центра по спирали
 {
 	int i, j, k, step;
 	i = j = size/2;

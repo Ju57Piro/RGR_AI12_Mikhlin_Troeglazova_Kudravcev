@@ -145,20 +145,37 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Caesar%27s_cipher.cpp" />
+    <ClCompile Include="code_word_encr.cpp" />
+    <ClCompile Include="cypher.cpp" />
     <ClCompile Include="decrypt_matrix.cpp" />
+    <ClCompile Include="find_in_vector.cpp" />
+    <ClCompile Include="FuncAtbash.cpp" />
+    <ClCompile Include="Gronsfeld_cipher.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="matrix.cpp" />
+    <ClCompile Include="Polybius_square.cpp" />
+    <ClCompile Include="Simple_Table_rewrite.cpp" />
     <ClCompile Include="Size_of_matrix.cpp" />
     <ClCompile Include="TablShifr.cpp" />
+    <ClCompile Include="TarabFunc.cpp" />
     <ClCompile Include="write_segment.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Caesar%27s_cipher.h" />
+    <ClInclude Include="code_word_encr.h" />
     <ClInclude Include="cypher.h" />
     <ClInclude Include="decrypt_matrix.h" />
+    <ClInclude Include="FuncAtbash.h" />
+    <ClInclude Include="Gronsfeld_cipher.h" />
+    <ClInclude Include="find_in_vector.h" />
+    <ClInclude Include="HedAtbash.h" />
+    <ClInclude Include="Polybius_square.h" />
+    <ClInclude Include="Simple_Table_rewrite.h" />
     <ClInclude Include="Size_of_matrix.h" />
     <ClInclude Include="matrix.h" />
     <ClInclude Include="TablShifr.h" />
+    <ClInclude Include="TarabFunc.h" />
+    <ClInclude Include="TarabHead.h" />
     <ClInclude Include="write_segment.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
