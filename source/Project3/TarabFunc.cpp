@@ -6,7 +6,7 @@
 #include <iterator>
 
 
-std::string DecShif(std::string S3)
+std::string tarabar_decr(std::string S3)
 {
     setlocale(LC_ALL, "Russian");
     std::vector<char>Case = {  'Á', 'Â', 'Ã', 'Ä', 'Æ', 'Ç', 'Ê', 'Ë', 'Ì', 'Í', 'Ï', 'Ð', 'Ñ', 'Ò', 'Ô', 'Õ', 'Ó', '×', 'Ø', 'Ù', 'Ú', 'Ü', 'É', 'À', 'Å', '¨', 'È', 'Î', 'Ó', 'Û', 'Ý', 'Þ', 'ß'};
@@ -26,7 +26,7 @@ std::string DecShif(std::string S3)
     return S2;
 
 }
-std::string Tabl(std::string S1)
+std::string tarabar_encr(std::string S1)
 {
     setlocale(LC_ALL, "Russian");
     std::vector<char>Case = { 'Á', 'Â', 'Ã', 'Ä', 'Æ', 'Ç', 'Ê', 'Ë', 'Ì', 'Í', 'Ï', 'Ð', 'Ñ', 'Ò', 'Ô', 'Õ', 'Ó', '×', 'Ø', 'Ù', 'Ú', 'Ü', 'É', 'À', 'Å', '¨', 'È', 'Î', 'Ó', 'Û', 'Ý', 'Þ', 'ß' };
